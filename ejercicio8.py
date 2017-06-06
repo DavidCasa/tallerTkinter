@@ -11,4 +11,6 @@ def var_states():
 Label(master, text="Indicar el sexo:").grid(row=0, sticky=W)
 #declaracion de una variable
 var1 = IntVar()
+Checkbutton(master, txt="male", variable=var1).grid(row=1, sticky=W))
+var2= IntVar()
 

@@ -11,9 +11,10 @@ def var_states():
 Label(master, text="Indicar el sexo:").grid(row=0, sticky=W)
 #declaracion de una variable
 var1 = IntVar()
-Checkbutton(master, txt="male", variable=var1).grid(row=1, sticky=W))
+Checkbutton(master, text="male", variable=var1).grid(row=1, sticky=W)
 var2= IntVar()
-Checkbutton(master, txt="female", variable=var2).grid(row=1, sticky=W)
+Checkbutton(master, text="female", variable=var2).grid(row=2, sticky=W)
 Button(master, text='Quit', command= master.quit).grid(row=3, sticky=W, padx=4)
-
+Button(master, text='Show', command= var_states).grid(row=4, sticky=W, padx=4)
+mainloop()
 
